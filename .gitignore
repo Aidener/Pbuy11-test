@@ -1,0 +1,10 @@
+/client/.vscode
+/client/resource.o
+/client/threadpool.o
+/client/client.o
+/client/client
+/server/.vscode
+/server/resource.o
+/server/threadpool.o
+/server/server.o
+/server/server
