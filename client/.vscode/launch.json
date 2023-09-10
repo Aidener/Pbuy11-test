@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug MultiThreaded Program",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/client",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable multi-threading debugging",
+                    "text": "set follow-fork-mode child",
+                    "ignoreFailures": true
+                }
+            ],
+            "postDebugTask": ""
+        }
+    ]
+}
